@@ -1,0 +1,55 @@
+body {
+  font-family: "Georgia", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5dc;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+}
+
+.poem {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: "Georgia", serif;
+}
+
+#password-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+input[type="password"] {
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#success-message {
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
