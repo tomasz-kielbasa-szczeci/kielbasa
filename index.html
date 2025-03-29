@@ -27,83 +27,102 @@
       <h2>Moje ulubione</h2>
 
       <article class="poet">
-        <h3>Wisława Szymborska</h3>
+        <h3>Konstanty Ildefons Gałczyński</h3>
         <p class="bio">
-          (1923-2012) Noblistka znana z lapidarnego stylu i filozoficznego
-          spojrzenia na codzienność. Mistrzyni paradoksu i intelektualnej gry ze
-          słowem.
+          (1905-1953) Mistyczny poeta z nutą absurdalnego humoru, łączący ludową
+          wyobraźnię z metafizyczną głębią.
         </p>
         <div class="poem">
           <pre>
-Nic dwa razy się nie zdarza
-i nie zdarzy. Z tej przyczyny
-rodzimy się bez wprawy
-i umieramy bez rutyny.
-
-Choćbyśmy uczniami byli
-najtępszymi w szkole świata,
-nie będziemy repetować
-żadnej zimy ani lata.
-                </pre
+  "Polskie gwiazdy"
+  
+  Mówię do gwiazd: – Cudowne,
+  nie śpieszcie się, przystańcie.
+  I stanęły pod oknem
+  jak wiejscy muzykanci...
+  
+  A ja mówię: – Świetliste,
+  zagrajcie mi do tańca!
+  I zagrały mi w listki,
+  w sierpniowe listki bratnie.
+              </pre
           >
         </div>
       </article>
 
       <article class="poet">
-        <h3>Zbigniew Herbert</h3>
+        <h3>Maria Pawlikowska-Jasnorzewska</h3>
         <p class="bio">
-          (1924-1998) Poeta moralnego niepokoju, twórca cyklu o Panu Cogito. W
-          swojej twórczości łączył tradycję antyku z doświadczeniami XX wieku.
+          (1891-1945) Poetka miłości i natury, nazywana "polską Safoną",
+          mistrzyni miniatury poetyckiej.
         </p>
         <div class="poem">
           <pre>
-Przesłanie Pana Cogito
-
-idź dokąd poszli tamci do ciemnego kresu
-po złote runo nicości twoją ostatnią nagrodę
-
-idź wyprostowany wśród tych co na kolanach
-wśród odwróconych plecami i obalonych w proch
-                </pre
+  "Tłum gwiazd"
+  
+  Tłum gwiazd iskrzący w firmamentu głębi,
+  Patrzący w okno, trwogą mnie przenika...
+  Czy widzą moją lampę, co się żarzy
+  W tym szarym domku, jak świetlny owad?
+              </pre
           >
         </div>
       </article>
 
       <article class="poet">
-        <h3>Czesław Miłosz</h3>
+        <h3>Zenon Przesmycki (Miriam)</h3>
         <p class="bio">
-          (1911-2004) Laureat Nagrody Nobla, poeta historii i metafizyki. W
-          swojej twórczości zmagał się z pytaniami o moralną odpowiedzialność
-          artysty.
+          (1861-1944) Poeta Młodej Polski, tłumacz i teoretyk sztuki,
+          zafascynowany metafizyką światła.
         </p>
         <div class="poem">
           <pre>
-Dar
+  "Gwiazdy"
+  
+  Gwiazdy! O wy, co w nocnej, modrej głębinie
+  Płyniecie cicho, jak łzy niezmazane...
+  Czy wy płakane, czy niepłakane?
+  Czy wy wspomnienia, czy wy przeczucie?
+              </pre
+          >
+        </div>
+      </article>
 
-Dzień taki szczęśliwy.
-Mgła opadła wcześnie, pracowałem w ogrodzie.
-Kolibry przystawały nad kwiatem kaprifolium.
-
-Nie było na ziemi rzeczy, którą chciałbym mieć.
-Nie znałem nikogo, komu warto byłoby zazdrościć.
-                </pre
+      <article class="poet">
+        <h3>Leszek Sulima Ciundziewicki</h3>
+        <p class="bio">
+          (współczesny) Poeta ludowy, autor wierszy dla dzieci, kolekcjoner
+          wiejskich opowieści.
+        </p>
+        <div class="poem">
+          <pre>
+  "Moje gwiazdy"
+  
+  Gdy spadająca gwiazdka
+  mignie nad naszą wioską,
+  zaklinam ją szeptem:
+  "Niech spełni się wszystko,
+  co w sercu noszę głęboko,
+  pod pierzyną z mrozu".
+              </pre
           >
         </div>
       </article>
     </section>
 
     <section id="password-section">
-      <input type="password" id="password" placeholder="Wprowadź hasło" />
-      <button onclick="checkPassword()">Wyślij</button>
+      <div></div>
+      <input type="password" id="password" placeholder="" />
+      <button onclick="checkPassword()">Przejdź do moich utworów</button>
     </section>
 
     <script>
       function checkPassword() {
         const password = document.getElementById("password").value;
-        if (password === "poetry123") {
+        if (password.includes("gwiazd")) {
           window.location.href = "success.html";
         } else {
-          alert("Nieprawidłowe hasło!");
+          alert("Spróbuj ponownie! To nie takie trudne.");
         }
       }
     </script>
