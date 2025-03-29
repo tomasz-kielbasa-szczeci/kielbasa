@@ -119,7 +119,7 @@
     <script>
       function checkPassword() {
         const password = document.getElementById("password").value;
-        if (password.includes("gwiazd")) {
+        if (password.toLowerCase().includes("gwiazd")) {
           window.location.href = "success.html";
         } else {
           alert("Spróbuj ponownie! To nie takie trudne.");
