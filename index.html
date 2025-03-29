@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <title>Czesław Miłosz - Nobel Prize Poet</title>
+    <title>Tomasz Kiełbasa - Poezja</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
-      <h1>Czesław Miłosz</h1>
+      <h1>Tomasz Kiełbasa</h1>
     </header>
 
     <section id="bio">
-      <h2>Biography</h2>
+      <h2>Biografia</h2>
       <p>
-        Czesław Miłosz (1911-2004) was a Polish poet, prose writer, and
-        diplomat. Awarded the Nobel Prize in Literature in 1980 for his
-        'uncompromising penetration in speaking about the most difficult
-        dilemmas of our time'. Born in Lithuania, he survived both Nazi
-        occupation and Communist rule, eventually emigrating to the United
-        States in 1960.
+        Tomasz Kiełbasa (ur. 1985) - poeta pochodzący ze Szczecin Małych.
+        Absolwent filologii polskiej Uniwersytetu Szczecińskiego. Debiutował w
+        2010 roku tomikiem "Zapomniane poranki", który przeszedł bez echa. Jego
+        poezja, osadzona w wiejskim krajobrazie dzieciństwa, porusza tematy
+        samotności, przemijania i trudnych relacji rodzinnych. Publikuje głównie
+        w niskonakładowych wydawnictwach regionalnych.
       </p>
     </section>
 
-    <section id="poems">
-      <article class="poem">
-        <h3>Love</h3>
-        <pre>
-Love means to learn to look at yourself
-The way one looks at distant things
-For you are only one thing among many.
-And whoever sees that way heals his heart,
-Without knowing it, from various ills            
-            </pre
-        >
+    <section id="ulubione">
+      <h2>Moje ulubione</h2>
+
+      <article class="poet">
+        <h3>Wisława Szymborska</h3>
+        <p class="bio">
+          (1923-2012) Noblistka znana z lapidarnego stylu i filozoficznego
+          spojrzenia na codzienność. Mistrzyni paradoksu i intelektualnej gry ze
+          słowem.
+        </p>
+        <div class="poem">
+          <pre>
+Nic dwa razy się nie zdarza
+i nie zdarzy. Z tej przyczyny
+rodzimy się bez wprawy
+i umieramy bez rutyny.
+
+Choćbyśmy uczniami byli
+najtępszymi w szkole świata,
+nie będziemy repetować
+żadnej zimy ani lata.
+                </pre
+          >
+        </div>
       </article>
 
-      <article class="poem">
-        <h3>A Song on the End of the World</h3>
-        <pre>
-On the day the world ends
-A bee circles a clover,
-A fisherman mends a glimmering net.
-Happy porpoises jump in the sea,
-Over the sea a young sparrow soaks up sun.            
-            </pre
-        >
+      <article class="poet">
+        <h3>Zbigniew Herbert</h3>
+        <p class="bio">
+          (1924-1998) Poeta moralnego niepokoju, twórca cyklu o Panu Cogito. W
+          swojej twórczości łączył tradycję antyku z doświadczeniami XX wieku.
+        </p>
+        <div class="poem">
+          <pre>
+Przesłanie Pana Cogito
+
+idź dokąd poszli tamci do ciemnego kresu
+po złote runo nicości twoją ostatnią nagrodę
+
+idź wyprostowany wśród tych co na kolanach
+wśród odwróconych plecami i obalonych w proch
+                </pre
+          >
+        </div>
       </article>
 
-      <article class="poem">
-        <h3>Encounter</h3>
-        <pre>
-We were riding through frozen fields in a wagon at dawn.
-A red wing rose in the darkness.
-And suddenly a hare ran across the road.
-One of us pointed to it with his hand.            
-            </pre
-        >
+      <article class="poet">
+        <h3>Czesław Miłosz</h3>
+        <p class="bio">
+          (1911-2004) Laureat Nagrody Nobla, poeta historii i metafizyki. W
+          swojej twórczości zmagał się z pytaniami o moralną odpowiedzialność
+          artysty.
+        </p>
+        <div class="poem">
+          <pre>
+Dar
+
+Dzień taki szczęśliwy.
+Mgła opadła wcześnie, pracowałem w ogrodzie.
+Kolibry przystawały nad kwiatem kaprifolium.
+
+Nie było na ziemi rzeczy, którą chciałbym mieć.
+Nie znałem nikogo, komu warto byłoby zazdrościć.
+                </pre
+          >
+        </div>
       </article>
     </section>
 
     <section id="password-section">
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter secret password"
-      />
-      <button onclick="checkPassword()">Submit</button>
+      <input type="password" id="password" placeholder="Wprowadź hasło" />
+      <button onclick="checkPassword()">Wyślij</button>
     </section>
 
     <script>
@@ -74,7 +103,7 @@ One of us pointed to it with his hand.
         if (password === "poetry123") {
           window.location.href = "success.html";
         } else {
-          alert("Incorrect password!");
+          alert("Nieprawidłowe hasło!");
         }
       }
     </script>
